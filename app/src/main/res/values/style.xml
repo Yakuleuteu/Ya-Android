@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="YA.Pretendard.Bold.18" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/pretendard_semibold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="YA.Pretendard.Bold.16" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/pretendard_semibold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="YA.Pretendard.Bold.14" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/pretendard_semibold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="YA.Pretendard.Bold.12" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/pretendard_semibold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="YA.Pretendard.Bold.10" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/pretendard_semibold</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="YA.Pretendard.Regular.18" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/pretendard_regular</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="YA.Pretendard.Regular.16" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/pretendard_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="YA.Pretendard.Regular.14" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/pretendard_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="YA.Pretendard.Regular.12" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/pretendard_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="YA.Pretendard.Regular.10" parent="Widget.MaterialComponents.TextView">
+        <item name="android:fontFamily">@font/pretendard_regular</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>
