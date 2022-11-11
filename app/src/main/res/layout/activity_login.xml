@@ -28,33 +28,50 @@
         app:layout_constraintStart_toStartOf="@+id/glStart"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/etId"
-        style="@style/YA.Pretendard.Regular.14"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilId"
         android:layout_width="0dp"
-        android:layout_height="48dp"
+        android:layout_height="52dp"
         android:layout_marginTop="70dp"
-        android:hint="@string/id"
-        android:inputType="text"
-        android:paddingStart="6dp"
-        android:textColor="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/glEnd"
         app:layout_constraintStart_toStartOf="@+id/glStart"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
 
-    <EditText
-        android:id="@+id/etPassword"
-        style="@style/YA.Pretendard.Regular.14"
+        <EditText
+            android:id="@+id/etId"
+            style="@style/YA.Pretendard.Regular.14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:hint="@string/id"
+            android:inputType="text"
+            android:paddingStart="6dp"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPassword"
         android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="33dp"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        android:paddingStart="6dp"
-        android:textColor="@color/black"
+        android:layout_height="52dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintEnd_toStartOf="@+id/glEnd"
         app:layout_constraintStart_toStartOf="@+id/glStart"
-        app:layout_constraintTop_toBottomOf="@id/etId" />
+        app:layout_constraintTop_toBottomOf="@id/tilId"
+        app:passwordToggleDrawable="@drawable/password_drawable_checked"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/YA.Pretendard.Regular.14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingStart="6dp"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <com.yongjincompany.ya.customview.CustomMainButton
         android:id="@+id/btnLogin"
@@ -63,7 +80,7 @@
         android:layout_marginTop="60dp"
         app:layout_constraintEnd_toStartOf="@+id/glEnd"
         app:layout_constraintStart_toStartOf="@+id/glStart"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        app:layout_constraintTop_toBottomOf="@+id/tilPassword"
         app:main_text="@string/login" />
 
     <TextView
