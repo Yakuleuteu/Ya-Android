@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">YA</string>
+    <string name="id">아이디</string>
+    <string name="password">비밀번호</string>
+    <string name="login">로그인</string>
+    <string name="find_password">비밀번호 찾기</string>
+    <string name="find_id">아이디 찾기</string>
+    <string name="register">회원가입</string>
 </resources>
