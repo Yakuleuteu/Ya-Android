@@ -6,4 +6,10 @@
     <string name="find_password">비밀번호 찾기</string>
     <string name="find_id">아이디 찾기</string>
     <string name="register">회원가입</string>
+    <string name="re_password">비밀번호 재입력</string>
+    <string name="email_certification">이메일 인증</string>
+    <string name="set_profile">프로필 설정</string>
+    <string name="set_profile_detail">프로필과 회사 이름, 사업자 등록 번호를 입력해주세요.</string>
+    <string name="select_interest">관심 분야 선택</string>
+    <string name="select_interest_detail">관심있는 분야를 선택해주세요.</string>
 </resources>
