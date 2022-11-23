@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="156dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_launcher_background">
+
+            <TextView
+                android:id="@+id/tvCategory"
+                style="@style/YA.Pretendard.Bold.12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="8dp"
+                android:text="디자인"
+                android:textColor="@color/main_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDetail"
+                style="@style/YA.Pretendard.Bold.12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="저희 희사는 최강입니다 프젝하고 있습니다."
+                android:layout_marginStart="4dp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/tvCategory"
+                app:layout_constraintStart_toEndOf="@+id/tvCategory"
+                app:layout_constraintTop_toTopOf="@+id/tvCategory" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivCompanyImage"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        style="@style/YA.Pretendard.Bold.14"
+        android:id="@+id/tvCompanyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Figma"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCompanyImage"
+        app:layout_constraintStart_toEndOf="@+id/ivCompanyImage"
+        app:layout_constraintTop_toTopOf="@+id/ivCompanyImage" />
+
+    <ImageView
+        android:id="@+id/ivHeart"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_heart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
