@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvMypage"
+        style="@style/YA.Pretendard.Bold.18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="마이페이지"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="38dp"
+        android:src="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tvMypage"
+        app:layout_constraintTop_toBottomOf="@+id/tvMypage" />
+
+    <TextView
+        android:id="@+id/tvMyName"
+        style="@style/YA.Pretendard.Bold.16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="이용진"
+        app:layout_constraintBottom_toBottomOf="@+id/ivProfile"
+        app:layout_constraintStart_toEndOf="@+id/ivProfile"
+        app:layout_constraintTop_toTopOf="@+id/ivProfile" />
+
+    <TextView
+        android:id="@+id/tvField"
+        style="@style/YA.Pretendard.Bold.10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:background="@drawable/field_background"
+        android:padding="6dp"
+        android:text="안드로이드"
+        android:textColor="@color/main_color"
+        app:layout_constraintBottom_toBottomOf="@+id/tvMyName"
+        app:layout_constraintStart_toEndOf="@+id/tvMyName"
+        app:layout_constraintTop_toTopOf="@+id/tvMyName" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/gray_400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivProfile" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clEditProfile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+        <ImageView
+            android:id="@+id/ivPencil"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/ic_pencil"
+            app:layout_constraintBottom_toBottomOf="@+id/clEditProfile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/clEditProfile" />
+
+        <TextView
+            android:id="@+id/tvModifierProfile"
+            style="@style/YA.Pretendard.Bold.14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:padding="10dp"
+            android:text="@string/modifier_profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivPencil"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clFavoriteCompany"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clEditProfile">
+
+        <ImageView
+            android:id="@+id/ivHeart"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/ic_heart"
+            app:layout_constraintBottom_toBottomOf="@+id/clFavoriteCompany"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/clFavoriteCompany" />
+
+        <TextView
+            android:id="@+id/tvFavoriteCompany"
+            style="@style/YA.Pretendard.Bold.14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:padding="10dp"
+            android:text="@string/favorite_company"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivHeart"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clFavoriteCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clFavoriteCompany">
+
+        <ImageView
+            android:id="@+id/ivFilter"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/ic_filter"
+            app:layout_constraintBottom_toBottomOf="@+id/clFavoriteCategory"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/clFavoriteCategory" />
+
+        <TextView
+            android:id="@+id/tvSetFavoriteCategory"
+            style="@style/YA.Pretendard.Bold.14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:padding="10dp"
+            android:text="@string/set_favorite_category"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivFilter"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
