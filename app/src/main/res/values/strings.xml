@@ -12,4 +12,8 @@
     <string name="set_profile_detail">프로필과 회사 이름, 사업자 등록 번호를 입력해주세요.</string>
     <string name="select_interest">관심 분야 선택</string>
     <string name="select_interest_detail">관심있는 분야를 선택해주세요.</string>
+    <string name="modifier_profile">프로필 수정</string>
+    <string name="favorite_company">관심있는 회사</string>
+    <string name="set_favorite_category">관심분야 설정</string>
+    <string name="mypage">마이페이지</string>
 </resources>
