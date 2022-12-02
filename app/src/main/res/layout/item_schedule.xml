@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <ImageView
+        android:id="@+id/ivScheduleItem"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_schedule_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMeetingSchedule"
+        style="@style/YA.Pretendard.Bold.12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="간단한 미팅"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivScheduleItem"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMeetingMan"
+        style="@style/YA.Pretendard.Regular.10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(주)네이버 - 권선구"
+        android:textColor="@color/gray_200"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvMeetingSchedule"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMeetingTime"
+        style="@style/YA.Pretendard.Bold.10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9:00 ~ 11:00"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
