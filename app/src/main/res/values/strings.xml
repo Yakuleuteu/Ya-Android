@@ -16,4 +16,5 @@
     <string name="favorite_company">관심있는 회사</string>
     <string name="set_favorite_category">관심분야 설정</string>
     <string name="mypage">마이페이지</string>
+    <string name="schedule">일정</string>
 </resources>
