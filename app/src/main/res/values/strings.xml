@@ -17,4 +17,9 @@
     <string name="set_favorite_category">관심분야 설정</string>
     <string name="mypage">마이페이지</string>
     <string name="schedule">일정</string>
+    <string name="start">시작</string>
+    <string name="end">종료</string>
+    <string name="place">장소</string>
+    <string name="company">기업</string>
+    <string name="modifier">수정하기</string>
 </resources>
