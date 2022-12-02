@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:background="@drawable/schedule_detail_dialog_background">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/YA.Pretendard.Bold.14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="네이버 CTO분과 협업 의논"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvStart"
+        style="@style/YA.Pretendard.Regular.12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/start"
+        android:textColor="@color/gray_200"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tvStartTime"
+        style="@style/YA.Pretendard.Bold.12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="3월 4일 오전 9:00"
+        app:layout_constraintBottom_toBottomOf="@+id/tvStart"
+        app:layout_constraintStart_toEndOf="@+id/tvStart"
+        app:layout_constraintTop_toTopOf="@+id/tvStart" />
+
+    <TextView
+        android:id="@+id/tvEnd"
+        style="@style/YA.Pretendard.Regular.12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/end"
+        android:textColor="@color/gray_200"
+        app:layout_constraintStart_toStartOf="@+id/tvStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvStart" />
+
+    <TextView
+        android:id="@+id/tvEndTime"
+        style="@style/YA.Pretendard.Bold.12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="3월 4일 오전 11:00"
+        app:layout_constraintBottom_toBottomOf="@+id/tvEnd"
+        app:layout_constraintStart_toEndOf="@+id/tvEnd"
+        app:layout_constraintTop_toTopOf="@+id/tvEnd" />
+
+    <TextView
+        android:id="@+id/tvPlace"
+        style="@style/YA.Pretendard.Regular.12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/place"
+        android:textColor="@color/gray_200"
+        app:layout_constraintStart_toStartOf="@+id/tvEnd"
+        app:layout_constraintTop_toBottomOf="@+id/tvEnd" />
+
+    <TextView
+        android:id="@+id/tvPlaceDetail"
+        style="@style/YA.Pretendard.Bold.12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="대전광역시 유성구 가정북로 76"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPlace"
+        app:layout_constraintStart_toEndOf="@+id/tvPlace"
+        app:layout_constraintTop_toTopOf="@+id/tvPlace" />
+
+    <TextView
+        android:id="@+id/tvCompany"
+        style="@style/YA.Pretendard.Regular.12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/company"
+        android:textColor="@color/gray_200"
+        app:layout_constraintStart_toStartOf="@+id/tvPlace"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlace" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivCompanyIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCompany"
+        app:layout_constraintStart_toEndOf="@+id/tvCompany"
+        app:layout_constraintTop_toTopOf="@+id/tvCompany" />
+
+    <TextView
+        android:id="@+id/tvCompanyDetail"
+        style="@style/YA.Pretendard.Bold.12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="(주) 네이버"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCompanyIcon"
+        app:layout_constraintStart_toEndOf="@+id/ivCompanyIcon"
+        app:layout_constraintTop_toTopOf="@+id/ivCompanyIcon" />
+
+    <TextView
+        android:id="@+id/tvModifier"
+        style="@style/YA.Pretendard.Regular.12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/modifier"
+        android:textColor="@color/main_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
