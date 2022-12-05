@@ -5,34 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/glStart"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.1111" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/glEnd"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.8888" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/glBack"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.0444"/>
-
     <ImageView
         android:id="@+id/ivBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="22.5dp"
         android:src="@drawable/ic_back"
-        app:layout_constraintStart_toStartOf="@+id/glBack"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -50,9 +30,10 @@
         android:id="@+id/tilId"
         android:layout_width="0dp"
         android:layout_height="52dp"
+        android:layout_marginHorizontal="40dp"
         android:layout_marginTop="80dp"
-        app:layout_constraintEnd_toStartOf="@+id/glEnd"
-        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvRegister">
 
         <EditText
@@ -71,9 +52,9 @@
         android:id="@+id/tilPassword"
         android:layout_width="0dp"
         android:layout_height="52dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toStartOf="@+id/glEnd"
-        app:layout_constraintStart_toStartOf="@+id/glStart"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/tilId"
+        app:layout_constraintStart_toStartOf="@+id/tilId"
         app:layout_constraintTop_toBottomOf="@id/tilId"
         app:passwordToggleDrawable="@drawable/password_drawable_checked"
         app:passwordToggleEnabled="true">
@@ -94,9 +75,9 @@
         android:id="@+id/tilRePassword"
         android:layout_width="0dp"
         android:layout_height="52dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toStartOf="@+id/glEnd"
-        app:layout_constraintStart_toStartOf="@+id/glStart"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/tilPassword"
+        app:layout_constraintStart_toStartOf="@+id/tilPassword"
         app:layout_constraintTop_toBottomOf="@+id/tilPassword"
         app:passwordToggleDrawable="@drawable/password_drawable_checked"
         app:passwordToggleEnabled="true">
@@ -114,14 +95,17 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageView
+        android:id="@+id/ivSmallCircle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="43dp"
         android:layout_marginBottom="67dp"
         android:src="@drawable/small_circle"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/glEnd" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
+        android:id="@+id/ivBigCircle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/big_circle"
@@ -133,9 +117,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="58dp"
-        app:layout_constraintEnd_toStartOf="@+id/glEnd"
-        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintEnd_toEndOf="@+id/tilRePassword"
+        app:layout_constraintStart_toStartOf="@+id/tilRePassword"
         app:layout_constraintTop_toBottomOf="@+id/tilRePassword"
         app:main_text="다음" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

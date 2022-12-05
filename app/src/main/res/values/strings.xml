@@ -22,4 +22,6 @@
     <string name="place">장소</string>
     <string name="company">기업</string>
     <string name="modifier">수정하기</string>
+    <string name="email">이메일</string>
+    <string name="verification">인증</string>
 </resources>

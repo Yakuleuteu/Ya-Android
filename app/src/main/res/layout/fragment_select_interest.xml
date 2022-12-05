@@ -5,34 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/glStart"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.1111" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/glEnd"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.8888" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/glBack"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.0444" />
-
     <ImageView
         android:id="@+id/ivBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="22.5dp"
         android:src="@drawable/ic_back"
-        app:layout_constraintStart_toStartOf="@+id/glBack"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -61,21 +41,25 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvInterest"
         android:layout_width="0dp"
+        android:layout_marginHorizontal="30dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="53dp"
-        app:layout_constraintEnd_toStartOf="@+id/glEnd"
-        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvSetProfileDetail" />
 
     <ImageView
+        android:id="@+id/ivSmallCircle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="43dp"
         android:layout_marginBottom="67dp"
         android:src="@drawable/small_circle"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/glEnd" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
+        android:id="@+id/ivBigCircle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/big_circle"
@@ -86,8 +70,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        app:layout_constraintEnd_toStartOf="@+id/glEnd"
-        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintEnd_toEndOf="@+id/rvInterest"
+        app:layout_constraintStart_toStartOf="@+id/rvInterest"
         app:layout_constraintTop_toBottomOf="@+id/rvInterest"
         app:main_text="완료" />
 
