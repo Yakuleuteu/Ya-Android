@@ -24,4 +24,5 @@
     <string name="modifier">수정하기</string>
     <string name="email">이메일</string>
     <string name="verification">인증</string>
+    <string name="new_company">신규 가입 회사</string>
 </resources>
