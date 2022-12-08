@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvNewCompany"
+                style="@style/YA.Pretendard.Bold.18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="22.5dp"
+                android:text="@string/new_company"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivNotice"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_notice"
+                app:layout_constraintBottom_toBottomOf="@+id/tvNewCompany"
+                app:layout_constraintEnd_toStartOf="@+id/ivSearch"
+                app:layout_constraintTop_toTopOf="@+id/tvNewCompany" />
+
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_search"
+                app:layout_constraintBottom_toBottomOf="@+id/tvNewCompany"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvNewCompany" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clFirstNewCompany"
+                android:layout_width="match_parent"
+                android:layout_height="156dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvNewCompany"
+                tools:layout_editor_absoluteX="30dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_launcher_background">
+
+                        <TextView
+                            android:id="@+id/tvCategory"
+                            style="@style/YA.Pretendard.Bold.12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="디자인"
+                            android:textColor="@color/main_color"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tvDetail"
+                            style="@style/YA.Pretendard.Bold.12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:text="저희 희사는 최강입니다 프젝하고 있습니다."
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="@+id/tvCategory"
+                            app:layout_constraintStart_toEndOf="@+id/tvCategory"
+                            app:layout_constraintTop_toTopOf="@+id/tvCategory" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivCompanyImage"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/ic_launcher_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvCompanyName"
+                    style="@style/YA.Pretendard.Bold.14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Figma"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivCompanyImage"
+                    app:layout_constraintStart_toEndOf="@+id/ivCompanyImage"
+                    app:layout_constraintTop_toTopOf="@+id/ivCompanyImage" />
+
+                <ImageView
+                    android:id="@+id/ivHeart"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_heart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clSecondNewCompany"
+                android:layout_width="match_parent"
+                android:layout_height="156dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/clFirstNewCompany"
+                tools:layout_editor_absoluteX="30dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_launcher_background">
+
+                        <TextView
+                            android:id="@+id/tvCategoryTwo"
+                            style="@style/YA.Pretendard.Bold.12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="디자인"
+                            android:textColor="@color/main_color"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tvDetailTwo"
+                            style="@style/YA.Pretendard.Bold.12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:text="저희 희사는 최강입니다 프젝하고 있습니다."
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="@+id/tvCategoryTwo"
+                            app:layout_constraintStart_toEndOf="@+id/tvCategoryTwo"
+                            app:layout_constraintTop_toTopOf="@+id/tvCategoryTwo" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivCompanyImageTwo"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/ic_launcher_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvCompanyNameTwo"
+                    style="@style/YA.Pretendard.Bold.14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Figma"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivCompanyImageTwo"
+                    app:layout_constraintStart_toEndOf="@+id/ivCompanyImageTwo"
+                    app:layout_constraintTop_toTopOf="@+id/ivCompanyImageTwo" />
+
+                <ImageView
+                    android:id="@+id/ivHeartTwo"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_heart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clThirdNewCompany"
+                android:layout_width="match_parent"
+                android:layout_height="156dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/clSecondNewCompany">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_launcher_background">
+
+                        <TextView
+                            android:id="@+id/tvCategoryThree"
+                            style="@style/YA.Pretendard.Bold.12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="디자인"
+                            android:textColor="@color/main_color"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tvDetailThree"
+                            style="@style/YA.Pretendard.Bold.12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:text="저희 희사는 최강입니다 프젝하고 있습니다."
+                            android:textColor="@color/white"
+                            app:layout_constraintBottom_toBottomOf="@+id/tvCategoryThree"
+                            app:layout_constraintStart_toEndOf="@+id/tvCategoryThree"
+                            app:layout_constraintTop_toTopOf="@+id/tvCategoryThree" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivCompanyImageThree"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/ic_launcher_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvCompanyNameThree"
+                    style="@style/YA.Pretendard.Bold.14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Figma"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivCompanyImageThree"
+                    app:layout_constraintStart_toEndOf="@+id/ivCompanyImageThree"
+                    app:layout_constraintTop_toTopOf="@+id/ivCompanyImageThree" />
+
+                <ImageView
+                    android:id="@+id/ivHeartThree"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_heart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tvMyTag"
+                style="@style/YA.Pretendard.Bold.18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="#디자인"
+                android:textColor="@color/main_color"
+                app:layout_constraintStart_toStartOf="@+id/clThirdNewCompany"
+                app:layout_constraintTop_toBottomOf="@+id/clThirdNewCompany" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clTagCompany"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvMyTag">
+
+                <TextView
+                    android:id="@+id/tvTagMain"
+                    style="@style/YA.Pretendard.Bold.10"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="저희 회사 최고의 디자이너와 협업 할 기회가 열려있습니다! 우리는 모든 사람과 평등한 개발을 추구하는 좋은 회사입니다!"
+                    app:layout_constraintBottom_toTopOf="@+id/ivTagCompanyImage"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivTagCompanyImage"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/ic_launcher_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardView" />
+
+                <TextView
+                    android:id="@+id/tvTagCompanyName"
+                    style="@style/YA.Pretendard.Bold.12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Figma"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivTagCompanyImage"
+                    app:layout_constraintStart_toEndOf="@+id/ivTagCompanyImage"
+                    app:layout_constraintTop_toTopOf="@+id/ivTagCompanyImage" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="80dp"
+                    android:layout_height="0dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/ivTagPostImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <ImageView
+                        android:id="@+id/ivTagHeart"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="bottom|end"
+                        android:padding="4dp"
+                        android:src="@drawable/ic_heart"
+                        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+                        app:layout_constraintEnd_toEndOf="@+id/cardView" />
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clSecondTagCompany"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clTagCompany">
+
+                <TextView
+                    android:id="@+id/tvMain"
+                    style="@style/YA.Pretendard.Bold.10"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="저희 회사 최고의 디자이너와 협업 할 기회가 열려있습니다! 우리는 모든 사람과 평등한 개발을 추구하는 좋은 회사입니다!"
+                    app:layout_constraintBottom_toTopOf="@+id/ivTagCompanyImageTwo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardViewTwo"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivTagCompanyImageTwo"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/ic_launcher_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardViewTwo" />
+
+                <TextView
+                    android:id="@+id/tvTagCompanyNameTwo"
+                    style="@style/YA.Pretendard.Bold.12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Figma"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivTagCompanyImageTwo"
+                    app:layout_constraintStart_toEndOf="@+id/ivTagCompanyImageTwo"
+                    app:layout_constraintTop_toTopOf="@+id/ivTagCompanyImageTwo" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewTwo"
+                    android:layout_width="80dp"
+                    android:layout_height="0dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/ivTagPostImageTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <ImageView
+                        android:id="@+id/ivTagHeartTwo"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="bottom|end"
+                        android:padding="4dp"
+                        android:src="@drawable/ic_heart"
+                        app:layout_constraintBottom_toBottomOf="@+id/cardViewTwo"
+                        app:layout_constraintEnd_toEndOf="@+id/cardViewTwo" />
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clThirdTagCompany"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clSecondTagCompany">
+
+                <TextView
+                    android:id="@+id/tvMainThree"
+                    style="@style/YA.Pretendard.Bold.10"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="저희 회사 최고의 디자이너와 협업 할 기회가 열려있습니다! 우리는 모든 사람과 평등한 개발을 추구하는 좋은 회사입니다!"
+                    app:layout_constraintBottom_toTopOf="@+id/ivTagCompanyImageThree"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardViewThree"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivTagCompanyImageThree"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/ic_launcher_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardViewThree" />
+
+                <TextView
+                    android:id="@+id/tvTagCompanyNameThree"
+                    style="@style/YA.Pretendard.Bold.12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Figma"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivTagCompanyImageThree"
+                    app:layout_constraintStart_toEndOf="@+id/ivTagCompanyImageThree"
+                    app:layout_constraintTop_toTopOf="@+id/ivTagCompanyImageThree" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewThree"
+                    android:layout_width="80dp"
+                    android:layout_height="0dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/ivTagPostImageThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <ImageView
+                        android:id="@+id/ivTagHeartThree"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="bottom|end"
+                        android:padding="4dp"
+                        android:src="@drawable/ic_heart"
+                        app:layout_constraintBottom_toBottomOf="@+id/cardViewThree"
+                        app:layout_constraintEnd_toEndOf="@+id/cardViewThree" />
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
